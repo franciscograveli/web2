@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:8.4-apache
+    container_name: web-php84
+    ports:
+      - "86:80"
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
